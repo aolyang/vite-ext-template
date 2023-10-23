@@ -25,7 +25,8 @@
     "pack:crx": "crx pack extension -o ./extension.crx",
     "pack:xpi": "cross-env WEB_EXT_ARTIFACTS_DIR=./ web-ext build --source-dir ./extension --filename extension.xpi --overwrite-dest",
     "start:chromium": "web-ext run --source-dir ./extension --target=chromium",
-    "start:firefox": "web-ext run --source-dir ./extension"
+    "start:firefox": "web-ext run --source-dir ./extension",
+    "target:firefox": "esno scripts/manifest-rewrite.ts"
   },
   "dependencies": {
     "vue": "^3.3.4"
@@ -37,6 +38,7 @@
     "@vitejs/plugin-vue": "^4.4.0",
     "cross-env": "^7.0.3",
     "crx": "^5.0.1",
+    "esno": "^0.17.0",
     "jszip-cli": "^1.4.24",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.0.3",

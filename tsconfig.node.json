@@ -8,6 +8,7 @@
   },
   "include": [
     "vite.config.ts",
-    "src/manifest.ts"
+    "src/manifest.ts",
+    "scripts/*.ts"
   ]
 }
