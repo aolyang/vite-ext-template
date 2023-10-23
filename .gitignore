@@ -9,6 +9,8 @@
 # production
 /build
 /package
+/extension
+extension.*
 
 # misc
 .DS_Store

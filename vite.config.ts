@@ -21,7 +21,7 @@ export default defineConfig(() => {
     build: {
       cssCodeSplit: true,
       emptyOutDir: true,
-      outDir: 'build',
+      outDir: 'extension',
       rollupOptions: {
         output: {
           chunkFileNames: 'assets/chunk-[hash].js',
